@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  min-width: 290px;
+  margin: 0;
+  padding: 0;
+  color: #4d4e53;
+  background-color: #fcfae8;
+  background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
+}
+
+header {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+nav {
+  position: fixed;
+  width: 300px;
+  min-width: 260px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: solid;
+  border-color: #555;
+  border-left: unset;
+  border-bottom: unset;
+}
+
+.nav-header {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+nav ul {
+  display: block;
+  position: relative;
+  width: inherit;
+  height: 89%;
+  list-style-type: none;
+  text-align: left;
+  margin-top: 10px;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav li {
+  position: relative;
+}
+
+a.nav-link {
+  display: block;
+  padding: 10px 25px;
+  width: 83%;
+  color: #4d4e53;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+nav li:first-child {
+  border-top: 1px solid #555;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+main {
+  display: block;
+  margin-left: 300px;
+}
+
+#main-doc {
+  position: absolute;
+  padding: 20px 25px 20px 35px;
+}
+
+article {
+  margin: 20px 0 20px 20px;
+}
+
+article li {
+  margin: 15px;
+}
+
+code {
+  display: block;
+  position: relative;
+  width: inherit;
+  border-radius: 5px;
+  background-color: #fcfae8;
+  padding: 20px;
+  margin: 15px 0px;
+}
+
+@media only screen and (max-width: 760px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 246px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid;
+  }
+
+  #navbar ul {
+    border: 1px solid;
+    height: 180px;
+  }
+
+  a.nav-link {
+    width: 100%;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-top: 250px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  article {
+    margin-left: 0;
+  }
+
+  article ul {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  code {
+    width: 90%;
+  }
+}
